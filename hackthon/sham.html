@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Mood Matcher - Find Peace Through Quran</title>
+    <link rel="stylesheet" href="seham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="mosque-loader">
+                <i class="fas fa-mosque"></i>
+            </div>
+            <div class="loader-text">
+                <span>Quran Mood Matcher</span>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mosque Style Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-mosque"></i>
+                <span id="logo-text">Quran Mood Matcher</span>
+            </div>
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#" id="home-link" class="nav-link active">Home</a>
+                    <a href="#" id="about-link" class="nav-link">About</a>
+                </div>
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select id="language-select">
+                        
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Islamic Patterns -->
+    <div class="floating-patterns">
+        <div class="pattern pattern-1">﷽</div>
+        <div class="pattern pattern-2">ﷲ</div>
+        <div class="pattern pattern-3">ﷴ</div>
+        <div class="pattern pattern-4">ﷺ</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Home Page -->
+        <div class="home-container" id="home-page">
+            <div class="welcome-section">
+                <div class="welcome-content">
+                    <h1 id="welcome-title" class="animate-title">Welcome to Quran Mood Matcher</h1>
+                    <p id="welcome-text" class="animate-subtitle">Select your current emotional state to receive comforting verses from the Holy Quran and relevant Hadith that match your mood.</p>
+                    <div class="feature-highlights">
+                        <div class="feature-item">
+                            <i class="fas fa-quran"></i>
+                            <span>Quranic Verses</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book"></i>
+                            <span>Hadith Guidance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Audio Recitation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="mood-grid">
+                <div class="mood-card" data-mood="sad">
+                    <div class="mood-icon">
+                        <i class="fas fa-frown"></i>
+                    </div>
+                    <h3 id="sad-title">Sad</h3>
+                    <p id="sad-desc">Feeling down or distressed</p>
+                    <div class="mood-overlay">
+                        <span>Find Comfort</span>
+                    </div>
+                </div>
+                <div class="mood-card" data-mood="anxious">
+                    <div class="mood-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 id="anxious-title">Anxious</h3>
+                    <p id="anxious-desc">Worried or nervous</p>
+                    <div class="mood-overlay">
+                        <span>Find Peace</span>
+                    </div>
+                </div>
+                <div class="mood-card" data-mood="happy">
+                    <div class="mood-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 id="happy-title">Happy</h3>
+                    <p id="happy-desc">Feeling joyful and grateful</p>
+                    <div class="mood-overlay">
+                        <span>Express Gratitude</span>
+                    </div>
+                </div>
+                <div class="mood-card" data-mood="angry">
+                    <div class="mood-icon">
+                        <i class="fas fa-angry"></i>
+                    </div>
+                    <h3 id="angry-title">Angry</h3>
+                    <p id="angry-desc">Feeling upset or frustrated</p>
+                    <div class="mood-overlay">
+                        <span>Find Patience</span>
+                    </div>
+                </div>
+                <div class="mood-card" data-mood="grateful">
+                    <div class="mood-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3 id="grateful-title">Grateful</h3>
+                    <p id="grateful-desc">Feeling thankful to Allah</p>
+                    <div class="mood-overlay">
+                        <span>Give Thanks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mood Pages -->
+        <div class="mood-page" id="sad-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+            
+            <div class="mood-content">
+                <div class="ayah-section">
+                    <div class="ayah-header">
+                        <div class="ayah-arabic">
+                            وَقَالُوا الْحَمْدُ لِلَّهِ الَّذِي أَذْهَبَ عَنَّا الْحَزَنَ ۖ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ
+                        </div>
+                        <audio controls class="ayah-audio">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+
+
+</audio>
+                    </div>
+                    <div class="ayah-details">
+                        <div class="surah-info">
+                            <i class="fas fa-star"></i>
+                            <span>Surah Fatir (35:34)</span>
+                        </div>
+                        <div class="ayah-translation" id="sad-translation">
+                            "And they will say, 'Praise to Allah, who has removed from us [all] sorrow. Indeed, our Lord is Forgiving and Appreciative.'"
+                        </div>
+                        <div class="ayah-description">
+                            <p id="sad-description">This verse from Surah Fatir (35:34) reminds us that Allah will remove all sorrow from the believers in Paradise. It gives hope that our sadness in this world is temporary and that Allah's mercy is vast.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hadith-section">
+                    <h3><i class="fas fa-book"></i> <span id="hadith-title">Related Hadith</span></h3>
+                    <div class="hadith-text" id="sad-hadith">
+                        "How wonderful is the affair of the believer, for his affairs are all good, and this applies to no one but the believer. If something good happens to him, he is thankful for it and that is good for him. If something bad happens to him, he bears it with patience and that is good for him." (Muslim)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mood-page" id="anxious-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+            
+            <div class="mood-content">
+                <div class="ayah-section">
+                    <div class="ayah-header">
+                        <div class="ayah-arabic">
+                            أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                        </div>
+                        <audio controls class="ayah-audio">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="ayah-details">
+                        <div class="surah-info">
+                            <i class="fas fa-star"></i>
+                            <span>Surah Ar-Ra'd (13:28)</span>
+                        </div>
+                        <div class="ayah-translation" id="anxious-translation">
+                            "Unquestionably, by the remembrance of Allah hearts are assured."
+                        </div>
+                        <div class="ayah-description">
+                            <p id="anxious-description">This powerful verse from Surah Ar-Ra'd (13:28) teaches us that true peace and tranquility comes from remembering Allah. When we feel anxious, turning to dhikr (remembrance of Allah) can calm our hearts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hadith-section">
+                    <h3><i class="fas fa-book"></i> <span id="hadith-title">Related Hadith</span></h3>
+                    <div class="hadith-text" id="anxious-hadith">
+                        "No fatigue, nor disease, nor sorrow, nor sadness, nor hurt, nor distress befalls a Muslim, even if it were the prick he receives from a thorn, but that Allah expiates some of his sins for that." (Bukhari)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mood-page" id="happy-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+
+
+<div class="mood-content">
+                <div class="ayah-section">
+                    <div class="ayah-header">
+                        <div class="ayah-arabic">
+                            قُلْ بِفَضْلِ اللَّهِ وَبِرَحْمَتِهِ فَبِذَٰلِكَ فَلْيَفْرَحُوا هُوَ خَيْرٌ مِمَّا يَجْمَعُونَ
+                        </div>
+                        <audio controls class="ayah-audio">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="ayah-details">
+                        <div class="surah-info">
+                            <i class="fas fa-star"></i>
+                            <span>Surah Yunus (10:58)</span>
+                        </div>
+                        <div class="ayah-translation" id="happy-translation">
+                            "Say, 'In the bounty of Allah and in His mercy - in that let them rejoice; it is better than what they accumulate.'"
+                        </div>
+                        <div class="ayah-description">
+                            <p id="happy-description">This verse from Surah Yunus (10:58) teaches us that true happiness comes from recognizing and appreciating Allah's blessings and mercy, which are far more valuable than any worldly possessions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hadith-section">
+                    <h3><i class="fas fa-book"></i> <span id="hadith-title">Related Hadith</span></h3>
+                    <div class="hadith-text" id="happy-hadith">
+                        "If you are grateful, I will surely increase you [in favor]; but if you deny, indeed, My punishment is severe." (Quran 14:7)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mood-page" id="angry-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+            
+            <div class="mood-content">
+                <div class="ayah-section">
+                    <div class="ayah-header">
+                        <div class="ayah-arabic">
+                            وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ ۗ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ
+                        </div>
+                        <audio controls class="ayah-audio">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="ayah-details">
+                        <div class="surah-info">
+                            <i class="fas fa-star"></i>
+                            <span>Surah Ali 'Imran (3:134)</span>
+                        </div>
+                        <div class="ayah-translation" id="angry-translation">
+                            "And those who restrain anger and who pardon the people - and Allah loves the doers of good."
+                        </div>
+                        <div class="ayah-description">
+                            <p id="angry-description">This verse from Surah Ali 'Imran (3:134) highlights the virtue of controlling anger and forgiving others. It reminds us that suppressing anger and showing forgiveness are qualities loved by Allah.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hadith-section">
+                    <h3><i class="fas fa-book"></i> <span id="hadith-title">Related Hadith</span></h3>
+                    <div class="hadith-text" id="angry-hadith">
+                        "The strong is not the one who overcomes the people by his strength, but the strong is the one who controls himself while in anger." (Bukhari)
+
+
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mood-page" id="grateful-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+            
+            <div class="mood-content">
+                <div class="ayah-section">
+                    <div class="ayah-header">
+                        <div class="ayah-arabic">
+                            وَإِن تَعُدُّوا نِعْمَةَ اللَّهِ لَا تُحْصُوهَا ۗ إِنَّ اللَّهَ لَغَفُورٌ رَّحِيمٌ
+                        </div>
+                        <audio controls class="ayah-audio">
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="ayah-details">
+                        <div class="surah-info">
+                            <i class="fas fa-star"></i>
+                            <span>Surah An-Nahl (16:18)</span>
+                        </div>
+                        <div class="ayah-translation" id="grateful-translation">
+                            "And if you should count the favors of Allah, you could not enumerate them. Indeed, Allah is Forgiving and Merciful."
+                        </div>
+                        <div class="ayah-description">
+                            <p id="grateful-description">This verse from Surah An-Nahl (16:18) reminds us of the countless blessings Allah has bestowed upon us, encouraging gratitude and recognition of His endless mercy.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hadith-section">
+                    <h3><i class="fas fa-book"></i> <span id="hadith-title">Related Hadith</span></h3>
+                    <div class="hadith-text" id="grateful-hadith">
+                        "He who does not thank people, does not thank Allah." (Abu Dawud)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div class="about-page" id="about-page">
+            <button class="back-button" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i>
+                <span id="back-text">Back to Home</span>
+            </button>
+            
+            <div class="about-content">
+                <div class="about-header">
+                    <h2 id="about-title">About Quran Mood Matcher</h2>
+                    <div class="about-icon">
+                        <i class="fas quran-icon">﷽</i>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p id="about-text1">Quran Mood Matcher is a web application designed to provide spiritual comfort and guidance by matching your current emotional state with relevant verses from the Holy Quran and Hadith.</p>
+                    
+                    <p id="about-text2">Our mission is to help Muslims find peace, solace, and direction through the words of Allah and the teachings of Prophet Muhammad (PBUH) during different emotional experiences.</p>
+                    
+                    <div class="features-section">
+                        <h3 id="about-features">This application features:</h3>
+                        <ul id="features-list">
+                            <li><i class="fas fa-check"></i> Emotion-based Quranic verse recommendations</li>
+                            <li><i class="fas fa-check"></i> Relevant Hadith for each emotional state</li>
+                            <li><i class="fas fa-check"></i> Audio recitation of the verses</li>
+                            <li><i class="fas fa-check"></i> Arabic text with translation</li>
+                            <li><i class="fas fa-check"></i> Brief explanations of the verses</li>
+                        </ul>
+                    </div>
+
+
+<div class="closing-section">
+                        <i class="fas fa-quote-left"></i>
+                        <p id="about-closing">May this application bring you closer to Allah and provide comfort in times of need. Remember that the Quran is a healing and mercy for the believers.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <i class="fas fa-mosque"></i>
+                <span>Quran Mood Matcher</span>
+            </div>
+            <p class="footer-text">Finding Peace Through Quran &copy; 2025</p>
+        </div>
+        
+        <div class="footer-right">
+            <div class="footer-verse">
+                <p>"And We send down of the Quran that which is healing and mercy for the believers..."</p>
+                <span>- Surah Al-Isra (17:82)</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="././sham.js"></script>
+</body>
+</html>
