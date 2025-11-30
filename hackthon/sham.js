@@ -321,5 +321,137 @@ function changeLanguage(lang) {
         document.querySelectorAll('.ayah-header').forEach(header => {
             header.style.flexDirection = 'row';
         });
+    } document.addEventListener('DOMContentLoaded', function() {
+    // Team member data
+    // Team members data with English and Arabic versions
+    const teamMembersData = {
+        en: [
+            { 
+                name: "Hanan Ali",
+                role: "HTML & CSS Developer",
+                photo: "./Assets/photo_4_2025-11-30_12-56-40.jpg",
+                bio: "Builds clean, accessible HTML and CSS so pages work well on different devices. Writes simple, maintainable HTML/CSS and helps turn designs into working pages."
+            },
+            {
+                name: "Semira Oumer",
+                role: "HTML & CSS Developer",
+                photo: "./Assets/photo_2_2025-11-30_12-56-40.jpg",
+                bio: "Coordinates front-end tasks, ensures consistent design and quality across the project, and supports team collaboration, testing, and documentation."
+            },
+            {
+                name: "Liya Mehamed",
+                role: "CSS and JavaScript Developer",
+                photo: "./Assets/photo_1_2025-11-30_12-56-40.jpg",
+                bio: "Implements responsive, accessible layouts and polished UI interactions using modern CSS and modular JavaScript. Builds reusable components, animations, and event-driven behaviors."
+            },
+            {
+                name: "Hanan Asmare",
+                role: "CSS and JavaScript Developer",
+                photo: "./Assets/photo_3_2025-11-30_12-56-40.jpg",
+                bio: "Designs intuitive, responsive interfaces and implements interactive features with clean, maintainable JavaScript and CSS to enhance usability and accessibility."
+            },
+            {
+                name: "Zahara Sultan",
+                role: "CSS & JavaScript Developer",
+                photo: "./Assets/photo_5_2025-11-30_12-56-40.jpg",
+                bio: "Creates engaging, user-friendly web experiences by combining modern CSS techniques with efficient JavaScript to build dynamic, responsive interfaces."
+            }
+        ],
+        ar: [
+            { 
+                name: "حنان علي",
+                role: "مطوّر HTML و CSS",
+                photo: "./Assets/photo_4_2025-11-30_12-56-40.jpg",
+                bio: "يبني HTML و CSS نظيفين ومتوافقين مع الأجهزة المختلفة. يكتب شيفرة صالحة وسهلة الصيانة ويساعد في تحويل التصاميم إلى صفحات عمل."
+            },
+            {
+                name: "سميرة عمر",
+                role: "مطوّرة HTML و CSS",
+                photo: "./Assets/photo_2_2025-11-30_12-56-40.jpg",
+                bio: "تنسق مهام الواجهة الأمامية، وتضمن تناسق التصميم وجودته عبر المشروع، وتدعم التعاون والاختبار والتوثيق."
+            },
+            {
+                name: "ليا محمد",
+                role: "مطوّرة CSS وجافاسكربت",
+                photo: "./Assets/photo_1_2025-11-30_12-56-40.jpg",
+                bio: "تنفّذ تنسيقات متجاوبة وقابلة للوصول وتبني تفاعلات واجهة أنيقة باستخدام CSS حديثة وجافاسكربت مُنظّم. تبني مكونات قابلة لإعادة الاستخدام وحركات وانخفاضيات حدثية."
+            },
+            {
+                name: "حنان أسماري",
+                role: "مطوّرة CSS وجافاسكربت",
+                photo: "./Assets/photo_3_2025-11-30_12-56-40.jpg",
+                bio: "تصمم واجهات بديهية ومتجاوبة وتنفّذ ميزات تفاعلية بشيفرة نظيفة وقابلة للصيانة لتعزيز قابلية الاستخدام وإمكانية الوصول."
+            },
+            {
+                name: "زهرة سلطان",
+                role: "مطوّرة CSS وجافاسكربت",
+                photo: "./Assets/photo_5_2025-11-30_12-56-40.jpg",
+                bio: "تبتكر تجارب ويب جذابة وسهلة الاستخدام عبر دمج تقنيات CSS الحديثة مع جافاسكربت فعّال لبناء واجهات ديناميكية ومتجاوبة."
+            }
+        ]
+    };
+
+    // Start with the current language's team members
+    let teamMembers = teamMembersData[currentLang] || teamMembersData.en;
+
+    // Get the container element (single declaration)
+    const teamContainer = document.getElementById('teamContainer');
+
+    // Re-render team members when language changes (the createTeamMemberCard function is defined below)
+    const languageSelectElem = document.getElementById('language-select');
+    if (languageSelectElem) {
+        languageSelectElem.addEventListener('change', function() {
+            const selectedLanguage = this.value;
+
+            // Keep global language state in sync
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(selectedLanguage);
+            } else {
+                // fallback update of teamMembers if changeLanguage isn't available
+                teamMembers = teamMembersData[selectedLanguage] || teamMembersData.en;
+            }
+
+            // update the reference to the appropriate language dataset
+            teamMembers = teamMembersData[selectedLanguage] || teamMembersData.en;
+
+            // If team container and factory exist, re-render immediately
+            if (teamContainer) {
+                teamContainer.innerHTML = '';
+                // createTeamMemberCard will be available by the time user toggles language
+                if (typeof createTeamMemberCard === 'function') {
+                    teamMembers.forEach(member => {
+                        const memberCard = createTeamMemberCard(member);
+                        teamContainer.appendChild(memberCard);
+                    });
+                }
+            }
+        });
     }
+
+    // Function to create team member cards
+    function createTeamMemberCard(member) {
+        const memberCard = document.createElement('div');
+        memberCard.className = 'team-member';
+        
+        memberCard.innerHTML = `
+            <img src="${member.photo}" alt="${member.name}" class="member-photo">
+            <div class="member-info">
+                <h3 class="member-name">${member.name}</h3>
+                <p class="member-role">${member.role}</p>
+                <p class="member-bio">${member.bio}</p>
+            </div>
+        `;
+        
+        return memberCard;
+    }
+
+    // Add team members to the page (guarded)
+    if (teamContainer && Array.isArray(teamMembers)) {
+        teamMembers.forEach(member => {
+            const memberCard = createTeamMemberCard(member);
+            teamContainer.appendChild(memberCard);
+        });
+    }
+});
+
 }
