@@ -1,80 +1,87 @@
 🌙 Quran Mood Matcher
+
 Finding Peace Through the Words of Allah
 
-Quran Mood Matcher is a spiritual wellness web application designed to help Muslims find the right Quranic verses and Hadith based on their current emotional state. Whether you're feeling anxious, lost, grateful, or joyful — this app connects your emotions with divine guidance.
+A spiritual wellness web application that connects your emotions with relevant **Quranic verses** and **Hadith**, helping you find comfort, understanding, and guidance during any emotional moment.
+
+---
+
+ 🖼️ Project Banner
+
+ 🌟 “And We send down of the Qur'an that which is healing and mercy for the believers.” — Surah Al-Isra (17:82)
+
+---
 
 🚀 About the Project
-Built using HTML, CSS, and JavaScript, this project was created during a hackathon with the goal of offering instant emotional and spiritual support through the Quran.
 
-Our mission:
-✨ Provide comfort, clarity, and healing through the words of Allah (SWT).
-✨ Help users connect deeply with Islamic teachings during emotional challenges.
+Quran Mood Matcher was built during a hackathon using **HTML**, **CSS**, and **JavaScript** with the goal of providing Muslims emotional support from the Quran in a simple, beautiful, and accessible way.
+
+---
+
 🌼 Features
-🔹 Emotion-Based Recommendations
 
-Select your mood and instantly receive a Quran verse that speaks directly to your heart.
+* 🔹 Emotion-based Quran verse recommendations
+* 🔹 Matching Hadith for each emotional state
+* 🔹 Peaceful audio recitation
+* 🔹 Arabic + English translation
+* 🔹 Short tafsir / explanation
+* 🔹 Responsive & elegant UI
 
-🔹 Hadith Matching
+---
 
-Relevant Hadith are displayed alongside each emotion for deeper Islamic insight.
-
-🔹 Audio Recitation
-
-Enjoy peaceful recitation to help you reflect and calm your soul.
-
-🔹 Arabic + Translation
-
-View the verse in Arabic along with its English translation.
-
-🔹 Short Tafsir / Explanation
-
-Understand the deeper meaning behind the revealed verse.
 🛠️ Tech Stack
 
-HTML5 — Structure, semantics & accessibility
+* HTML5
+* CSS3
+* JavaScript (ES6+)
 
-CSS3 — Responsive, elegant UI with animations
+---
 
-JavaScript (ES6+) — Dynamic mood matching & interactions
+ 👥 Team Members
 
-👥 Team Members
-The minds behind Quran Mood Matcher
+| Name              | Role                       | Description                                       |
+| ----------------- | -------------------------- | ------------------------------------------------- |
+| **Hanan Ali**     | HTML & CSS Developer       | Crafts clean and accessible web pages.            |
+| **Semira Oumer**  | HTML & CSS Developer       | Ensures visual consistency and structure.         |
+| **Liya Mehamed**  | CSS & JavaScript Developer | Builds responsive layouts & dynamic UI features.  |
+| **Hanan Asmare**  | CSS & JavaScript Developer | Creates user-friendly and interactive components. |
+| **Zahara Sultan** | CSS & JavaScript Developer | Enhances usability with modern CSS & JS.          |
 
-1) Hanan Ali	HTML & CSS Developer	Builds clean, accessible layouts that work beautifully on all devices.
-2) Semira Oumer	HTML & CSS Developer	Ensures consistent design and manages front-end coordination.
-3) Liya Mehamed	CSS & JavaScript Developer	Crafts responsive UI and dynamic JS features with smooth animations.
-4) Hanan Asmare	CSS & JavaScript Developer	Designs user-friendly interfaces and improves overall usability.
-5) Zahara Sultan	CSS & JavaScript Developer	Creates engaging and interactive components using modern CSS & JS.
+---
 
-💡 Why We Built This
+📸 Screenshots 
 
-In a world full of stress and distractions, we wanted to build a tool that reminds Muslims of Allah’s mercy and guidance. Every emotion has a place in Islam — and every emotion can be soothed by the Quran.
+---
 
-“And We send down of the Qur'an that which is healing and mercy for the believers…”
-— Surah Al-Isra (17:82)
-🧪 How to Run It Locally
-# Clone this repository
-git clone https://github.com/your-repo/quran-mood-matcher
+ 📁 Project Structure
 
-# Open the folder
-cd quran-mood-matcher
+quran-mood-matcher/
+│── index.html
+│── styles/
+│   └── style.css
+│── scripts/
+│   └── app.js
+│── assets/
+│  ├── images/
+└── README.md
 
-# Run the app
-Just open index.html in your browser!
+---
+
 🌟 Future Enhancements
 
-AI-powered emotion detection
+* AI-based emotion detection
+* Personalized verse recommendations
+* User mood tracking
+* Dark/Light mode toggle
+* Mobile app version
 
-Personalized daily verse suggestions
+---
+ 🤲 Final Message
 
-User mood tracking
+May this project become a source of comfort, clarity, and healing for anyone who uses it.
+May Allah reward every contributor and every user.
 
-Mobile app version
+© 2025 – Quran Mood Matcher**
+Built with faith, purpose, and code.
 
-🤲 Final Message
-
-We hope Quran Mood Matcher brings you comfort, hope, and a stronger connection with Allah (SWT).
-May this project be a source of continuous benefit — for us and for every user who seeks peace.
-
-© 2025 – Quran Mood Matcher
-Built with faith, code, and dedication.
+Just tell me!
