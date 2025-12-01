@@ -34,6 +34,7 @@ const content = {
         // Mood page content
         sadTranslation: "\"And they will say, 'Praise to Allah, who has removed from us [all] sorrow. Indeed, our Lord is Forgiving and Appreciative.'\"",
         sadDescription: "This verse from Surah Fatir (35:34) reminds us that Allah will remove all sorrow from the believers in Paradise. It gives hope that our sadness in this world is temporary and that Allah's mercy is vast.",
+        sadTranslation2: "\"Do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.\" (Quran 39:53)",
         sadHadith: "\"How wonderful is the affair of the believer, for his affairs are all good, and this applies to no one but the believer. If something good happens to him, he is thankful for it and that is good for him. If something bad happens to him, he bears it with patience and that is good for him.\" (Muslim)",
         
         anxiousTranslation: "\"Unquestionably, by the remembrance of Allah hearts are assured.\"",
@@ -52,6 +53,7 @@ angryHadith: "\"The strong is not the one who overcomes the people by his streng
         
         gratefulTranslation: "\"And if you should count the favors of Allah, you could not enumerate them. Indeed, Allah is Forgiving and Merciful.\"",
         gratefulDescription: "This verse from Surah An-Nahl (16:18) reminds us of the countless blessings Allah has bestowed upon us, encouraging gratitude and recognition of His endless mercy.",
+        gratefulTranslation2: "\"If you are grateful, I will surely increase you [in favor]...\" (Quran 14:7)",
         gratefulHadith: "\"He who does not thank people, does not thank Allah.\" (Abu Dawud)"
     },
     ar: {
@@ -103,18 +105,26 @@ angryHadith: "\"The strong is not the one who overcomes the people by his streng
         
         gratefulTranslation: "\"وإن تعدوا نعمة الله لا تحصوها إن الله لغفور رحيم\"",
         gratefulDescription: "هذه الآية من سورة النحل (١٦:١٨) تذكرنا بالنعم التي لا تحصى التي أنعم الله بها علينا، مشجعة على الشكر والاعتراف برحمته التي لا تنتهي.",
-        gratefulHadith: "\"من لا يشكر الناس لا يشكر الله.\" (أبو داود)"
+        gratefulHadith: "\"من لا يشكر الناس لا يشكر الله.\" (أبو داود)",
+        
     }
 };
 
 
 // Audio files for each mood with exact verse timestamps
 const audioFiles = {
-    sad: "https://everyayah.com/data/Alafasy_128kbps/035034.mp3", // Exact verse: Fatir 35:34
+    sad: 
+        "https://everyayah.com/data/Alafasy_128kbps/035034.mp3",  // Fatir 35:34 
+        
+        
+    
     anxious: "https://everyayah.com/data/Alafasy_128kbps/013028.mp3", // Exact verse: Ar-Ra'd 13:28
     happy: "https://everyayah.com/data/Alafasy_128kbps/010058.mp3", // Exact verse: Yunus 10:58
     angry: "https://everyayah.com/data/Alafasy_128kbps/003134.mp3", // Exact verse: Ali 'Imran 3:134
-    grateful: "https://everyayah.com/data/Alafasy_128kbps/016018.mp3" // Exact verse: An-Nahl 16:18
+    grateful:
+        "https://everyayah.com/data/Alafasy_128kbps/016018.mp3" , // An-Nahl 16:18
+       
+    
 };
 
 // Current language
