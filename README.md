@@ -96,6 +96,7 @@ rendering verses based on selected emotions
 Understanding how to organize files into modular folders (assets, styles, scripts)
 
 Integrating audio recitation in a clean, optimized way
+
 ---
 
 🤝 Teamwork & Collaboration
@@ -107,6 +108,7 @@ Maintaining consistent design across pages with shared styles
 Working under hackathon pressure while keeping quality high
 
 Communicating ideas clearly and merging different coding styles
+
 ---
 
 🎨 Design Skills
@@ -116,6 +118,7 @@ Creating Wireframes.
 Creating a calming, spiritual user experience
 
 Choosing readable fonts, proper spacing, and elegant color themes
+
 ---
 
 🌙 Islamic Knowledge
@@ -127,18 +130,22 @@ Understanding how Islamic teachings guide emotional wellness
 Appreciating how technology can support spiritual growth
 
 This project strengthened both our technical capabilities and our connection to the Quran.
+
 ---
 
 Try it live 🚀
 
 Demo](https://your-demo-link.com)
+
 ---
 
  🤲 Final Message
 
 May this project become a source of comfort, clarity, and healing for anyone who uses it.
 May Allah reward every contributor and every user.
+
 ---
+
 © 2025 – Quran Mood Matcher
  Team- Muslimah Coders.
 Built with faith, purpose, and code.
